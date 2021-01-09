@@ -1,0 +1,35 @@
+/*general*/
+body{
+    margin:0;
+}
+
+/*font*/
+
+/*mobileFIRST*/
+/*sections */
+
+#first_section {
+    background-image: url(billeder/splash.jpg);
+    width: 100%;
+    height:80vh;
+    background-repeat: no-repeat;
+      background-size: 180%;
+    background-position: 10%;
+    max-width: none;
+
+}
+
+/*web media*/
+@media (min-width:700px){
+
+    #first_section {
+    background-image: url(billeder/splash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 20% 60%;
+    max-width: none;
+
+}
+
+}
