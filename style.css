@@ -1,35 +1,169 @@
 /*general*/
-body{
-    margin:0;
+
+body {
+    margin: 0;
 }
 
-/*font*/
+/*fonts*/
+h1 {
+
+    color: #2e2e2e;
+    font-family: Seaweed Script, cursive;
+    font-size: 6rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*menu*/
+.menu {
+    color: #E2923C;
+    border-bottom: 1px solid #E2923C;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.menu:visited {
+    color: #9c9c9c;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 /*mobileFIRST*/
 /*sections */
 
+/*landing page*/
 #first_section {
     background-image: url(billeder/splash.jpg);
     width: 100%;
-    height:80vh;
+    height: 80vh;
     background-repeat: no-repeat;
-      background-size: 180%;
-    background-position: 10%;
+    background-size: 180%;
+    background-position: 8%;
     max-width: none;
 
+}
+/*title align*/
+    #port {
+        margin-left: 34vw;
+        padding-top: 5vw;
+    }
+
+    #folie {
+        margin-left: 58vw;
+        margin-top: -40px;
+
+    }
+
+/*smaller screens and ipad media*/
+@media (min-width:700px) {
+
+    /*font*/
+    h1 {
+        font-size: 10rem;
+        color: #2e2e2e;
+
+    }
+/*title align*/
+    #port {
+        margin-left: 53vw;
+        padding-top: 4vw;
+    }
+
+    #folie {
+        margin-left: 65vw;
+        margin-top: -50px;
+
+    }
+
+    /*menu*/
+    .menu {
+        margin-right: 50px;
+        font-size: 1.5rem;
+    }
+
+    .menu:hover {
+        color: #5a5a5a;
+        border-bottom: 2px solid #5a5a5a;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+
+    /*sections*/
+
+    #first_section {
+        background-image: url(billeder/splash.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: 20% 60%;
+        max-width: none;
+
+    }
 }
 
 /*web media*/
-@media (min-width:700px){
+@media (min-width:1400px) {
+
+    /*font*/
+    h1 {
+        font-size: 12rem;
+        color: white;
+
+    }
+
+    #port {
+        margin-left: 66vw;
+        padding-top: 4vw;
+    }
+
+    #folie {
+        margin-left: 76vw;
+        margin-top: -60px;
+
+    }
+
+    /*menu*/
+    .menu {
+        margin-right: 70px;
+        font-size: 1.5rem;
+    }
+
+    .menu:hover {
+        color: #5a5a5a;
+        border-bottom: 2px solid #5a5a5a;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    /*sections*/
 
     #first_section {
-    background-image: url(billeder/splash.jpg);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: 20% 60%;
-    max-width: none;
+        background-image: url(billeder/splash.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: 20% 60%;
+        max-width: none;
 
-}
+    }
 
 }
