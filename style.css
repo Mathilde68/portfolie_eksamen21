@@ -1,4 +1,7 @@
 /*general*/
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0 auto;
@@ -30,6 +33,8 @@ h2 {
     font-family: Dancing Script, cursive;
     font-size: 2.5rem;
     margin-bottom: 1px;
+    text-align: center;
+
 
 }
 
@@ -48,7 +53,8 @@ h3 {
 p {
     font-family: Montserrat, sans-serif;
     font-weight: lighter;
-    line-height: 140%;
+    line-height: 150%;
+    text-align: justify;
 }
 
 /*buttons*/
@@ -104,41 +110,49 @@ nav {
     margin-bottom: 20px;
 }
 
-/*mobileFIRST*/
+/*remember: mobile FIRST*/
 /*sections */
 
 /*landing page*/
 #first_section {
     background-image: url(billeder/splash.jpg);
     width: 100%;
-    height: 80vh;
+    height: 65vh;
     background-repeat: no-repeat;
     background-size: 180%;
-    background-position: 8%;
+    background-position: 12% 100%;
     max-width: none;
+    text-align: right;
 
 }
 
 /*title align*/
 #port {
-    margin-left: 34vw;
-    padding-top: 5vw;
+    margin-right: 40px;
+    padding-top: 20px;
 }
 
 #folie {
-    margin-left: 58vw;
+    margin-right: 10px;
     margin-top: -40px;
 
 }
-
-
-#third_section {
-    margin: 0 auto;
-    max-width: 100vw;
+/*second section*/
+#second_section {
+    margin: 0px 30px;
 
 }
 
-.col1 {
+#third_section {
+    margin: 10px auto;
+
+}
+
+#third_section h2 {
+    margin: 2px 30px;
+}
+
+#third_section .col1 {
 
     background-image: url(billeder/bluesplash.jpg);
     width: 100%;
@@ -152,12 +166,11 @@ nav {
 
 
 
-.row,
-.rowv2 {
-    margin-bottom: 4rem;
+.row {
+    margin-bottom: 3vh;
 }
 
- #third_section .col {
+#third_section .col {
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
@@ -166,11 +179,14 @@ nav {
 
 }
 
-
+footer {
+    margin: 10px;
+    text-align: right;
+}
 
 
 /*smaller screens and ipad media*/
-@media (min-width:700px) {
+@media (min-width:750px) {
 
     /*font*/
     h1 {
@@ -178,18 +194,25 @@ nav {
         color: #2e2e2e;
 
     }
-  h3 {
+
+    h2 {
+        text-align: left;
+    }
+
+    h3 {
         font-size: 1.5rem;
 
+
     }
+
     /*title align*/
     #port {
-        margin-left: 53vw;
-        padding-top: 4vw;
+        margin-right: 15vw;
+        padding-top: 20px;
     }
 
     #folie {
-        margin-left: 65vw;
+        margin-right: 5vw;
         margin-top: -50px;
 
     }
@@ -210,6 +233,7 @@ nav {
     }
 
 
+
     /*sections*/
 
     #first_section {
@@ -222,37 +246,75 @@ nav {
 
     }
 
-    .row {
+
+ #second_section .row {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 100vw;
-        margin:0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
     }
 
 
 
-    .col1 {
+    #second_section .col1 {
+        grid-column: 1;
+        padding: 0px 30px 0px 0px;
+        align-self: center;
+
+    }
+
+    #second_section p {
+        font-size: 1.2rem;
+        margin-left: 30px;
+    }
+
+    #lineart img {
+        width: 90%;
+
+        margin-right: -30px;
+       margin-top: 60px;
+        float:right;
+    }
+
+    #lineart {
+        grid-column: 2;
+        width: 100%;
+
+
+    }
+
+
+    #third_section .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+
+
+
+    #third_section .col1 {
         background-image: url(billeder/bluesplash.jpg);
         width: 100%;
         height: 15vh;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: -30px -15px;
-
+        background-position: -20px -10px;
         margin-top: 80px;
     }
 
 
 
-   #third_section .col {
+    #third_section .col {
         background-color: #e8e8e8;
-        padding:10px;
-    align-items: center;
-    justify-content: center;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-/*web media*/
+
+
+/*pc media*/
 @media (min-width:1400px) {
 
     /*font*/
@@ -264,6 +326,7 @@ nav {
 
     h2 {
         font-size: 3rem;
+        text-align: left;
     }
 
 
@@ -291,47 +354,88 @@ nav {
         background-size: cover;
         background-position: 20% 65%;
         max-width: none;
+        margin-bottom:70px;
     }
 
     /*title adjustment*/
     #port {
-        margin-left: 66vw;
-        padding-top: 3vw;
+        margin-right: 10vw;
+        padding-top: 3.5vw;
     }
 
     #folie {
-        margin-left: 76vw;
+        margin-right: 6vw;
         margin-top: -60px;
     }
 
-    .row {
-        max-width: 100vw;
+    /*second section*/
+
+
+
+    #second_section .row {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin:0;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+
+
+    #second_section .col1 {
+        grid-column: 1;
+        padding: 0px 30px 0px 0px;
+        align-self: center;
+
+    }
+
+    #second_section p {
+        font-size: 1.3rem;
+        margin-left: 30px;
+    }
+
+    #lineart img {
+        width: 85%;
+
+    margin-right: -30px;
+        margin-top: -135px;
+        float:right;
+    }
+
+    #lineart {
+        grid-column: 2;
+        width: 100%;
 
     }
 
 
 
-    .col1 {
+
+    /*third sections*/
+    #third_sections .row {
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+
+    }
+
+
+    #third_section .col1 {
         background-image: url(billeder/bluesplash.jpg);
-        width: 400px;
-        height: 15vh;
+        width: 100%;
+        height: 20vh;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 10px -60px;
+        background-position: 5px -30px;
 
         margin-top: 100px;
     }
 
 
 
-   #third_section .col {
-        display: inline-flex;
+    #third_section .col {
         background-color: #e8e8e8;
-        padding:30px 30px 20px 30px;
-align-items: center;
+        padding: 30px 30px 20px 30px;
+        align-items: center;
     }
 
 }
