@@ -1,4 +1,4 @@
-/*opgave sections*/
+/*opgave section style*/
 section {
     margin: 1em auto;
     max-width: 900px;
@@ -6,23 +6,30 @@ section {
 
 .row {
     margin: 1em auto;
-    width: 90%;
+    width: 100%;
 }
 
-
+/*galleri stuff*/
 #galleri {
     display: grid;
     grid-template-columns: 1fr;
     grid-row: 1fr;
-    position: relative;
+
 }
 
 .imgSlide {
     grid-column: 1;
     grid-row: 1;
+   border: 5px solid rgba(221, 221, 221, 0.84);
+margin-left: 10px;
+
 }
 
-/* image controls*/
+img {
+    width: 90vw;
+}
+
+/*---------------------------------- image controls----------------*/
 #imageControls {
     margin: 10px 0px 30px 0px;
     display: flex;
@@ -32,11 +39,9 @@ section {
 
 }
 
-img{
-    width:90vw;
-}
 
-/*dot indikator*/
+
+/*----------------------------------------------dot indikator--------------------------------*/
 .dot {
     flex-shrink: 0;
     width: 0.6em;
@@ -56,42 +61,71 @@ img{
     color: rgba(0, 0, 0, 0.26);
     font-size: 2em;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .arrow:hover {
     color: rgba(0, 0, 0, 0.50);
 }
 
+/*-------------------------back button-----------------------*/
+#back {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+/*for hiding images*/
 .gem {
     display: none;
 }
 
+.button{
+    text-align: center;
+}
+/*media queries*/
 @media (min-width:1400px) {
     section {
- margin-left:20px;
+        margin-left: 20px;
         max-width: none;
+        background-image: url(billeder/splashorange.png);
+        background-size: 102vw;
+        background-repeat: no-repeat;
+        background-position: 22vw -35vh;
+        width: 100%;
+
     }
 
     .row {
         display: flex;
         flex-direction: row;
-        grid-gap: 20px;
-        width: 100%;
-        align-content: center;
-flex-wrap: wrap;
+
+
+
+
+
     }
 
     .col {
-        width: 50vw;
-align-content: center;
-    }
-    #gallericol{
-
-
+        width: 60vw;
     }
 
-    img{
-        width:80%;
+    #galleri {
+        padding: 10px 80px 0px 80px;
+
+
+
+    }
+
+    #gallericol {
+        margin-left: 30px;
+        justify-content: center;
+
+    }
+
+
+    img {
+        width: 38vw;
+
 
     }
 
