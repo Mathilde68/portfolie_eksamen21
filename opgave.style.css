@@ -1,0 +1,98 @@
+/*opgave sections*/
+section {
+    margin: 1em auto;
+    max-width: 900px;
+}
+
+.row {
+    margin: 1em auto;
+    width: 90%;
+}
+
+
+#galleri {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    position: relative;
+}
+
+.imgSlide {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* image controls*/
+#imageControls {
+    margin: 10px 0px 30px 0px;
+    display: flex;
+    grid-gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    width:90vw;
+}
+
+/*dot indikator*/
+.dot {
+    flex-shrink: 0;
+    width: 0.6em;
+    height: 0.6em;
+
+    background: rgba(190, 178, 169, 0.39);
+    border-radius: 20px;
+
+}
+
+.activeDot {
+    background: rgba(190, 178, 169, 0.89);
+}
+
+/*next and prev arrows*/
+.arrow {
+    color: rgba(0, 0, 0, 0.26);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.gem {
+    display: none;
+}
+
+@media (min-width:1400px) {
+    section {
+ margin-left:20px;
+        max-width: none;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 20px;
+        width: 100%;
+        align-content: center;
+flex-wrap: wrap;
+    }
+
+    .col {
+        width: 50vw;
+align-content: center;
+    }
+    #gallericol{
+
+
+    }
+
+    img{
+        width:80%;
+
+    }
+
+}

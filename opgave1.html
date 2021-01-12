@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat:wght@200;400&family=Seaweed+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="opgave.style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat:wght@200;400&family=Seaweed+Script&display=swap" rel="stylesheet">
 </head>
 <header>
     <nav>
@@ -18,18 +19,42 @@
 </header>
 
 <body>
+
     <main>
+    <section>
+<div class="section_wrapper">
         <h2>Moodboard og Styletile</h2>
-        <div class="section_wrapper">
+        <div class="row">
             <div class="col">
-                <p></p>
+                <p>Pretend you're water. Just floating without any effort. Having a good day. Without washing the brush, I'm gonna go right into some Van Dyke Brown, some Burnt Umber, and a little bit of Sap Green. Let's get wild today. You gotta think like a tree. At home you have unlimited time. Even the worst thing we can do here is good.</p>
+                <p> Just make little strokes like that. Let's put a touch more of the magic here. Talk to trees, look at the birds. Whatever it takes. We'll put a happy little sky in here. Use what you see, don't plan it. Fluff it up a little and hypnotize it. This is the way you take out your flustrations. If you didn't have baby clouds, you wouldn't have big clouds.</p>
+                </p>
             </div>
-            <div class="col">
-                <div class="galleri"></div>
+            <div id="gallericol" class="col">
+                <div id="galleri">
+                    <img id="image1" class="imgSlide" src="billeder/moodboard.jpg" alt="">
+                    <img id="image2" class="imgSlide gem" src="billeder/styletile.jpg" alt="">
+                    <img id="image3" class="imgSlide gem" src="billeder/styletilelocal1.jpg" alt="">
+                    <img id="image4" class="imgSlide gem" src="billeder/styletilelocal2.jpg" alt="">
+
+                </div>
+
+<div id="imageControls">
+                        <div id="prev_button" class="arrow"> &larr; </div>
+
+                        <div id="dot1" class="dot activeDot"></div>
+                        <div id="dot2" class="dot"></div>
+                        <div id="dot3" class="dot"></div>
+                        <div id="dot4" class="dot"></div>
+
+                        <div id="next_button" class="arrow"> &rarr; </div>
+                    </div>
             </div>
         </div>
+        </div>
+</section>
     </main>
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 <footer></footer>
 
