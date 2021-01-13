@@ -4,11 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Design og assetliste</title>
+
+    <meta name="robots" content="noindex">
+
     <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat:wght@200;400&family=Seaweed+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="opgave.style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat:wght@200;400&family=Seaweed+Script&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Portfolie">
+    <meta name="application-name" content="Portfolie">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
 </head>
+
+
+<body>
 <header>
     <nav>
         <a class="menu" href="index.html#first_section">Forside</a>
@@ -16,21 +34,50 @@
         <a class="menu" href="index.html#third_section">Portfolie</a>
     </nav>
 </header>
-
-<body>
     <main>
-        <h2>Design og Assetliste</h2>
-        <div class="section_wrapper">
-            <div class="col">
-                <p></p>
+        <section id="opg5">
+            <div class="section_wrapper">
+                <a id="back" class="arrow" href="index.html#forløb3"> &larr; </a>
+
+                <div class="row">
+                    <div class="col">
+                        <h2>Designdokumentation & Assetliste</h2>
+                        <p>I tema 4 har vi lært om at lave spil, helt fra idegenererings fasen, til at designe assets og kode og animere.
+Jeg startede idefasen med at lave en brainstorm, derudfra lavede jeg et udvalg og, som jeg har gjort i tidligere temaer, lave jeg derfra flere iterationer af spilideer igennem skitser.
+Ud fra den valgte ide brugte jeg moodboards som inspiration til designet af spillet.</p> <p> Til karakterdesign tog jeg udgangspunkt i en allerede skabt karakter, og skitsede derfra forskellige versioner og kombinationer, indtil jeg nåede til en version som var en ny og min egen karakter. Inden jeg gik i gang med at skabe karakter, spil-elementer og baggrunde i illustrator, lavede jeg en farvepalette så alle elementer spillede godt sammen.
+
+</p>
+
+                    </div>
+                    <div id="gallericol" class="col">
+                        <div id="galleri">
+                            <img id="image1" class="imgSlide" src="billeder/opg5.1.jpg" alt="">
+                            <img id="image2" class="imgSlide gem" src="billeder/opg5.2.jpg" alt="">
+                            <img id="image3" class="imgSlide gem" src="billeder/opg5.3.jpg" alt="">
+                            <img id="image4" class="imgSlide gem" src="billeder/opg5.4.jpg" alt="">
+
+                        </div>
+
+                        <div id="imageControls">
+                            <div id="prev_button" class="arrow">&#8249;</div>
+
+                            <div id="dot1" class="dot activeDot"></div>
+                            <div id="dot2" class="dot"></div>
+                            <div id="dot3" class="dot"></div>
+                            <div id="dot4" class="dot"></div>
+
+                            <div id="next_button" class="arrow">&#8250;</div>
+                        </div>
+                        <div class="links">
+                            <a class="button" href="resources/04_05_01_Animation_MathildeLaursen.pdf">Gå til Designdokument</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <div class="galleri"></div>
-            </div>
-        </div>
+        </section>
     </main>
-    <script src=""></script>
-</body>
+    <script src="script.js"></script>
 <footer></footer>
+</body>
 
 </html>

@@ -34,7 +34,7 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 1px;
     text-align: center;
-    margin-top:4px;
+    margin-top: 4px;
 
 
 }
@@ -83,6 +83,7 @@ p {
 
 }
 
+
 /*menu*/
 .menu {
     color: #E2923C;
@@ -102,11 +103,18 @@ p {
     border-bottom: 1px solid #9c9c9c;
 }
 
+.menu:hover {
+    color: #5a5a5a;
+    border-bottom: 2px solid #5a5a5a;
+}
+
 nav {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
 
 /*remember: mobile FIRST*/
 /*sections */
@@ -135,6 +143,7 @@ nav {
     margin-top: -40px;
 
 }
+
 /*second section*/
 #second_section {
     margin: 0px 30px;
@@ -142,7 +151,7 @@ nav {
 }
 
 #third_section {
-    margin: 10px auto;
+    margin: 10px auto 30px auto;
 
 }
 
@@ -151,8 +160,8 @@ nav {
 
 }
 
-#third_section h3{
-    padding-top:60px;
+#third_section h3 {
+    padding-top: 80px;
 }
 
 #third_section .col1 {
@@ -162,15 +171,15 @@ nav {
     height: 25vh;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 20px -25px;
+    background-position: 15px -0px;
     min-width: 100%;
-    overflow:visible;
+    overflow: visible;
 }
 
 
 
 .row {
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
 }
 
 #third_section .col {
@@ -182,11 +191,27 @@ nav {
 
 }
 
-footer {
-    margin: 10px;
-    text-align: right;
+/*footer*/
+.up_button {
+    color: #2e2e2e;
+    border-bottom: 1px solid #2e2e2e;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 0px;
 }
 
+.up_button:hover {
+    color: #5a5a5a;
+    border-bottom: 2px solid #5a5a5a;
+}
+
+footer {
+    text-align: right;
+    padding: 20px 0px;
+
+}
 
 /*smaller screens and ipad media*/
 @media (min-width:750px) {
@@ -203,8 +228,8 @@ footer {
         text-align: left;
     }
 
-    #third_section h3{
-        padding-top:30px;
+    #third_section h3 {
+        padding-top: 30px;
     }
 
 
@@ -226,9 +251,8 @@ footer {
         font-size: 1.5rem;
     }
 
-    .menu:hover {
-        color: #5a5a5a;
-        border-bottom: 2px solid #5a5a5a;
+    .up_button {
+        font-size: 1.5rem;
     }
 
     nav {
@@ -250,7 +274,7 @@ footer {
     }
 
 
- #second_section .row {
+    #second_section .row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
@@ -274,8 +298,8 @@ footer {
         width: 90%;
 
         margin-right: -30px;
-       margin-top: 80px;
-        float:right;
+        margin-top: 80px;
+        float: right;
     }
 
     #lineart {
@@ -285,7 +309,7 @@ footer {
 
     }
 
-/*thirdsection*/
+    /*thirdsection*/
     #third_section .row {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -303,7 +327,7 @@ footer {
         background-size: 100%;
         background-position: -20px -1vh;
         margin-top: 80px;
-        overflow:visible;
+        overflow: visible;
     }
 
 
@@ -333,19 +357,26 @@ footer {
         text-align: left;
     }
 
-   #third_section h3{
+    #third_section h3 {
         font-size: 2rem;
         font-weight: bolder;
-        color:#ffffff;
-        padding-top:5px;
-}
+        color: #ffffff;
+        padding-top: 5px;
+    }
 
-
+    p{
+        font-size:1.2rem;
+    }
     /*menu*/
     .menu {
         margin-right: 70px;
         font-size: 1.5rem;
     }
+
+    .up_button {
+        font-size: 1.5rem;
+    }
+
 
     .menu:hover {
         color: #5a5a5a;
@@ -365,7 +396,7 @@ footer {
         background-size: cover;
         background-position: 20% 65%;
         max-width: none;
-        margin-bottom:70px;
+        margin-bottom: 70px;
     }
 
     /*title adjustment*/
@@ -406,9 +437,9 @@ footer {
     #lineart img {
         width: 100%;
 
-    margin-right: -30px;
+        margin-right: -30px;
         margin-top: -135px;
-        float:right;
+        float: right;
     }
 
     #lineart {

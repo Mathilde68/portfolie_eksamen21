@@ -1,5 +1,5 @@
-var curImg=1;
-var newImg=0;
+var curImg = 1;
+var newImg = 0;
 
 
 
@@ -11,6 +11,7 @@ newImg = 0; //the upcoming images number
 //hiides all other images
 document.querySelector("#image2").classList.add("gem");
 document.querySelector("#image3").classList.add("gem");
+document.querySelector("#image4").classList.add("gem");
 
 
 document.querySelector("#next_button").addEventListener("click", nextImage);
@@ -23,24 +24,24 @@ function nextImage() {
     document.querySelector("#next_button").removeEventListener("click", nextImage);
     //if conditions that make sure the curimg value and newimg value stays in the range 1-6.
     if (curImg < 4) {
-        console.log("if current is less than 3, new is current + 1");
+        console.log("if current is less than 4, new is current + 1");
         //gives newimg a value that is 1 more than current
         newImg = curImg + 1;
     }
 
     if (curImg == 4) {
-        console.log("if current is 3, new is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
+        console.log("if current is 4, new is 1");
+
         newImg = 1;
     }
     if (curImg > 4) {
-        console.log("if current is more than 3, current is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
+        console.log("if current is more than 4, current is 1");
+
         curImg = 1;
     }
     if (curImg == 0) {
-        console.log("if current is 0, current is 3");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
+        console.log("if current is 0, current is 4");
+
         curImg = 4;
     }
 
@@ -77,19 +78,19 @@ function prevImage() {
     }
 
     if (curImg == 1) {
-        console.log("if current is 1, new is 3");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
+        console.log("if current is 1, new is 4");
+
         newImg = 4;
     }
 
     if (curImg == 0) {
-        console.log("if current is 0, current is 3");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
+        console.log("if current is 0, current is 4");
+
         curImg = 4;
     }
     if (curImg > 4) {
-        console.log("if curent is more than 3, current is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
+        console.log("if curent is more than 4, current is 1");
+
         curImg = 1;
     }
 
